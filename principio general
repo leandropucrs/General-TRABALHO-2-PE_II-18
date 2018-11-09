@@ -1,0 +1,61 @@
+=-=INTRO=-=
+Número de jogadores (MAX 4)
+Nome dos jogadores (PRECISA?)
+
+Dados
+Girar dados (função tempo limitada?) RESOLVIDO
+Marcar dados - Passar por Arquivo
+
+Opções que faltam
+TURNOS - PASSAR POR Arquivo
+Girar novamente
+Fim
+
+Pontuação
+Sistema pontuação - PASSAR POR Arquivo
+
+
+OLHAR #include <cassert> e MAP nos vetores
+
+
+
+REGRAS E JOGADAS PONTUADAS:
+São 13 rodadas
+Cada rodada o jogador tem direito a girar os dados 3x, podendo manter o numero do dado na mesa ou girar todos, ou apenas alguns novamente. Após essas 3x ou menos, encerra-se a jogada do jogador;
+
+Jogada de 1 = 1-1-1-3-5 = 3 pontos, devido a 3x o numero 1
+3-3-4-4-5 = 6 pontos se considerado 2x3 ou 8 pontos se 2x4 ou 5 se considerado apenas o 5
+TRINCA(T) = 4-4-4-5-6 = Vale a soma de todos os dados
+QUADRA(Q) = 5-5-5-5-6 = Vale a soma de todos os dados
+FULL HAND/HOUSE(F) = Uma trinca e um par = 3-3-3-2-2 = 25 pontos (Qualquer combinação)
+Sequencia Alta(S+) = 2-3-4-5-6 = 30 pontos
+Sequencia baixa(S-) = 1-2-3-4-5 = 40 pontos
+General (G) = Cinco dados marcando mesmo numero = 50 pontos;
+Jogada aleatória (X) = 1-4-4-5-6 = qualquer combinação e vale a soma dos 5 dados.
+
+O resultado é marcado na cartela, na coluna do jogador e na linha correspondente à jogada. Aquela linha (e portanto aquela jogada) não poderá mais ser utilizada pelo jogador na mesma partida. (Por exemplo se sairam 5 numeros iguais e o jogador já tinha feito general, ele nãio pode fazer general novamente, ou seja não pode ganhar 50 pontos de novo;
+
+Se um determinado resultado não puder ser classificado como nenhuma das jogadas ainda restantes para aquele jogador, ele deverá escolher qual das jogadas restantes será descartada, marcando 0 (zero) na linha correspondente.
+
+Ao final de 13 rodadas, com a qualquer combinação. Vale a soma dos 5 dados.cartela toda preenchida, somam-se os valores de cada coluna, e o jogador que obtiver mais pontos será considerado o vencedor.
+
+EXEMPLO DA TABELA:
+
+	Jogador1	Jogador2	Jogador3
+1			
+2			
+3			
+4			
+5			
+6			
+T			
+Q			
+F			
+S+			
+S-			
+G			
+X			
+Total			
+
+
+

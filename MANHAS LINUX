@@ -1,0 +1,21 @@
+cat (arquivo)---- mostra o arquivo no terminal
+tab ..... depois do comando autocompleta
+gcc -----le programa e cria executavel
+./ ---- executa 
+rm ---- remove arquivo
+-o (nome) ---- renomeia   (USAR COM gcc)
+make ---- faz o programa
+export PS1="$"    muda prompt
+g++ nome nome2 -o nomecriado ---- junta arquivos e cria executavel
+vi-> esc+:+q+!
+nano->ctrl+x
+
+-=-=-=-=--=-=-=-=-=-=-=
+#GITHUB#
+
+git clone LINK
+git add --all
+git commit -m "COMENTARIO"
+git push (ENVIA PRO SERVIDOR)
+git pull (PUXA DO SERVIDOR)
+=-=-=-=-=-=-=-=-=-=-=-=
