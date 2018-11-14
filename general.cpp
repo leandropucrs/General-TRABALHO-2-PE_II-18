@@ -7,6 +7,54 @@
 using namespace std;
 
 
+class jogador {
+public:
+string nome;
+int pontos;
+int rodada;
+
+jogador (string nome, int pontos, int rodada){
+	this->nome = nome;
+	this->pontos = pontos;
+	this->rodada = rodada;
+}};
+
+void jogadores (vector<jogador>& jogo) {
+	string nome;
+	int pontos;
+	int rodada;
+
+	ifstream jogador;
+	
+	jogador.open("jogo.txt");
+
+if ( ! jogador.is_open() ) {
+        cerr << "Erro ao abrir arquivo de entrada!" << endl;
+        exit(-1);
+    }
+
+    jogador >> nome;
+    jogador >> pontos;
+    jogador >> rodada;
+
+while (jogador.good()) {
+	jogador c(nome,pontos,rodada);
+	jogo.pushback(c);
+ jogador >> nome;
+    jogador >> pontos;
+    jogador >> rodada;
+}
+
+
+	jogador.close();
+}
+
+void mostrar(vector<jogador> jogo) {
+    for(int i = 0; i < jogo.size(); i++) {
+        cout << jogo[i].nome << ", " << jogo[i].pontos << ", " << jogo[i].rodada << endl;
+    }
+}
+
 int main(){
 
 int jogadas, jogadas1, jogadas2, jogadas3, jogadas4;
@@ -30,7 +78,9 @@ cout<< "  "<< dado3<<endl;
 cout<< "  "<< dado4<<endl;
 cout<< "  "<< dado5<<endl;
 
+vector<jogador> jogadores;
+
+mostrar(jogadores);
 
 
-
-};
+}
