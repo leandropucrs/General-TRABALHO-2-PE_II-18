@@ -1,0 +1,19 @@
+-=INSTRUÇÕES=-
+O jogo consiste em uma tabela com 13 possibilidades de pontuações diferentes.
+Cada Jogador tem direito a 13 turnos, sendo possível girar/travar os dados 3x por turno.
+Cada turno a tabela deve ser preenchida de acordo com a melhor pontuação possível.
+Se não for possível pontuar ou preferir não fazer a pontuação, uma lacunada tabela deve ser preenchida com 0.
+Cada lacuna pode ser preenchida apenas uma única vez, não sendo possível substituir os pontos já marcados.
+A primeira metade da tabela contendo (Uns, Dois, Três, Quatros, Cincos e Seis) é diferente da segunda; onde seu
+objetivo principal é alcançar 63 pontos de modo que possa obter a pontuação bonus de 35 se conseguir o feito.
+A linha dos "Uns" só vai contar a soma dos 1 girados nos dados como pontos, de "Dois" só a soma dos 2 girados e
+assim até o "Seis".
+A Segunda parte da tabela (Trinca, Quadra, FULL HOUSE, GENERAL e JOGADA X) tem uma pontuação diferente.
+Trinca - Soma dos 3 dados iguais + 2 dados diferente
+Quadra - Soma dos 4 dados iguais + 1 dado diferente
+FULL HOUSE - (Uma trinca e uma dupla) 25 Pontos, independente dos dados
+Sequecia Menor - Uma sequencia numerica de até 4 dados - 30 Pontos
+Sequencia Maior - Uma sequencia numerica de 5 dados - 40 Pontos
+General* - 5 dados iguais - 50 Pontos; *Se girar novamente General ganha um bonus de 100 Pontos
+Jogada X - Soma da combinação dos dados
+O resultado final é calculado pela soma da primeira metade mais a segunda metade da tabela (+ Bonus, se tiver algum) 
